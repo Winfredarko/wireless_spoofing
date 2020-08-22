@@ -1,0 +1,62 @@
+﻿Initialized
+ε, receiverProb, Probability that receiver chooses the suboptimal actions (rand)
+μ, learnRate, Learning rate of Q-learning (rand)
+δ, discountFactor, Discount factor of Q-learning (rand)
+Q(s, x) = 0, (set)
+V (s) = 0, ∀x ∈  {l/K}0≤l≤K (set)
+
+Loop
+n, current time slot
+s_n, State observed by the receiver at time n (calc, before Eq 16, [Pf_(n-1), Pn_(n-1))])
+
+Test Threshold
+x_n, (???, Eq. 20)
+x*, optimal test threshold, (???, Eq. 19)
+
+K, levels of something ??? (???, introduced before Eq. 16)
+
+
+Observe s_(n+1) & U_n
+
+(U_n)
+T, number of packets (set)
+n, ???
+
+Utility (u_r)
+Go, Payoff from accepting legitimate packet (rand)
+G1, Payoff from rejecting a spoofing one (rand)
+Co, Cost of rejecting legitimate packet (rand) 
+C1, Cost of accepting spoofing packet (rand)
+N,  Number of spoofers ()
+yi, Spoofing frequency (???, after table 1--> We only have one spoofer, so arbritrary at this point)
+Pm, Miss detection rate (calculated elsewhere)
+Pf, False alarm rate (calc)
+x, input value ???, (???)
+
+(P_f)
+M, Number of tones (???)
+F, cdf (a function)
+σ^2, average power gain from the legitimate transmitter at the receiver (???, power of received channel)
+ρ, signal-to-interference-plus-noise-ratio (SINR) of packets sent by legitimate transmitter (???, power of channel/ power of noise, look at unused channels)
+b, relative change in the channel gain due to environmental changes (???, assume 0)
+
+(P_m)
+All values (except b) included in P_f
+κ, ratio of channel gain of spoofer to that of the legitimate transmitter (calc)
+
+
+
+
+(Q)
+μ, (set)
+δ, (set)
+V, max value of a Q function (calc)
+U_n, (calc)
+
+(V)
+Q, Q function (set)
+
+GIVEN
+- MAC address
+- Packet contents
+- Channel Estimation Vector r_n
